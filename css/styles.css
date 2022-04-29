@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+.container {
+  font-family: 'Segoe UI';
+  display: flex;
+  flex-flow: row wrap;
+  width: 900px;
+  height: 600px;
+  margin: 85px auto 0 auto; }
+  .container .img {
+    width: 48%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px; }
+    .container .img img {
+      width: 90%;
+      height: 100%; }
+  .container .data {
+    width: 40%;
+    height: 100%; }
+    .container .data .form {
+      border: 1px solid #ddd;
+      margin-top: 20px; }
+      .container .data .form .imglogo {
+        padding: 45px 0 35px 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .container .data .form .imglogo img {
+          width: 48%;
+          height: 48%; }
+      .container .data .form form {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 14px; }
+        .container .data .form form input {
+          padding: 10px;
+          width: 75%;
+          height: 33px;
+          border: 1px solid #ccc; }
+          .container .data .form form input:focus {
+            outline: none;
+            border-color: #888; }
+        .container .data .form form input[type="submit"] {
+          padding: 0px;
+          border-radius: 5px;
+          background-color: #0095f6;
+          color: #fff;
+          font-size: 14px;
+          font-weight: 600; }
+          .container .data .form form input[type="submit"]:focus {
+            border: none; }
+          .container .data .form form input[type="submit"]:hover {
+            cursor: pointer; }
+      .container .data .form .oclass {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .container .data .form .oclass .o {
+          display: inline-block;
+          overflow: hidden;
+          text-align: center;
+          color: #bbb;
+          font-size: 15px;
+          text-align: center;
+          width: 75%; }
+        .container .data .form .oclass .o > span {
+          position: relative;
+          display: inline-block; }
+        .container .data .form .oclass .o > span:before, .container .data .form .oclass .o > span:after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          border-bottom: 1px solid #ccc;
+          width: 100vw;
+          margin: 0 20px; }
+        .container .data .form .oclass .o > span:before {
+          right: 100%; }
+        .container .data .form .oclass .o > span:after {
+          left: 100%; }
+      .container .data .form .fb {
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center; }
+        .container .data .form .fb .fb_img {
+          width: 20%;
+          height: 100%;
+          display: flex;
+          justify-content: end;
+          padding: 3px;
+          align-items: center; }
+          .container .data .form .fb .fb_img img {
+            width: 23px;
+            height: 23px; }
+            .container .data .form .fb .fb_img img:hover {
+              cursor: pointer; }
+        .container .data .form .fb p {
+          color: #385185;
+          width: 80%;
+          font-size: 14px;
+          font-weight: 600; }
+          .container .data .form .fb p:hover {
+            cursor: pointer; }
+      .container .data .form .olv {
+        display: inline-block;
+        color: #2b3e66;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 13px;
+        margin-bottom: 20px; }
+        .container .data .form .olv:hover {
+          cursor: pointer; }
+    .container .data .noacc {
+      border: 1px solid #ddd;
+      margin-top: 20px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .container .data .noacc p {
+        font-size: 14px;
+        color: #222; }
+        .container .data .noacc p a {
+          text-decoration: none;
+          color: #1795f6;
+          font-weight: 500; }
+    .container .data .download {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center; }
+      .container .data .download p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: #222;
+        font-size: 14px; }
+        .container .data .download p:hover {
+          cursor: pointer; }
+      .container .data .download .buttons {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px; }
+        .container .data .download .buttons button {
+          border: none;
+          border-radius: 8px;
+          width: 40%;
+          height: 45px; }
+          .container .data .download .buttons button:hover {
+            cursor: pointer; }
+        .container .data .download .buttons .b1 {
+          background: url("../img/b1.png");
+          background-size: cover; }
+        .container .data .download .buttons .b2 {
+          background: url("../img/b2.png");
+          background-size: cover; }
+
+footer {
+  width: 900px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; }
+  footer .links {
+    margin-top: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; }
+    footer .links a {
+      text-decoration: none;
+      display: inline-block;
+      font-size: 13px;
+      color: #888; }
+  footer .copy {
+    margin-top: 10px; }
+    footer .copy p {
+      font-size: 14px;
+      color: #888; }
+
+/*# sourceMappingURL=styles.css.map */
